@@ -79,7 +79,7 @@
 				client.getDir(endpoint, path)
 					.then(function(dirData) {
 						(callback)(null, dirData.map(function(dirEntry) {
-							return dirEntry.basename;
+							return dirEntry;
 						}));
 					})
 					.catch(function(err) {
