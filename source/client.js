@@ -72,6 +72,7 @@
 					basename: pathTools.basename(filename),
 					lastmod: processXMLStringValue(propsBro.iCanHaz1("d:getlastmodified", "D:getlastmodified")),
 					size: parseInt(processXMLStringValue(propsBro.iCanHaz1("d:getcontentlength", "D:getcontentlength")) || "0", 10),
+					checksum: processXMLStringValue(propsBro.iCanHaz1("d:checksum", "D:checksum")),
 					type: itemType
 				},
 				mime = propsBro.iCanHaz1("d:getcontenttype", "D:getcontenttype");

@@ -12,6 +12,7 @@
 				isDirectory: function() {
 					return itemInfo.type === "directory";
 				},
+				checksum: itemInfo.checksum,
 				mtime: new Date(itemInfo.lastmod)
 			};
 		}
