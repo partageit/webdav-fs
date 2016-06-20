@@ -161,7 +161,8 @@
 			return fetch(auth.url + path, {
 				method: "PROPFIND",
 				headers: {
-					Depth: 1
+					Depth: 1,
+					'checksum-please': 1
 				}
 			})
 				.then(handleResponseError)
@@ -203,7 +204,8 @@
 			return fetch(auth.url + path, {
 				method: "PROPFIND",
 				headers: {
-					Depth: 1
+					Depth: 1,
+					'checksum-please': 1
 				}
 			})
 				.then(handleResponseError)
